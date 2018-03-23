@@ -1,0 +1,24 @@
+Package: filereadrrec
+Title: Reads Data Files in Nested Folder Structure
+Version: 0.0.0.9000
+Authors@R: person("Pranav", "Sachdev", email = "pranavsachdev5@gmail.com", role = c("aut", "cre"))
+Description: 
+    1. This package is designed to read files of the format (csv/xlsx/xls), so any other files that reside within the folder structure, eg. PDF, txt, etc; will be ignored.
+    2. The naming convention of the read files will be: 
+        a.	For CSV:	 ProjData_<FolderName1>_<FolderName2>_<FolderName3>._filename
+        b.	For XLSX/XLS:	ProjData_<FolderName1>_<FolderName2>_<FolderName3>._filename_SheetName1
+   	                      ProjData_<FolderName1>_<FolderName2>_<FolderName3>._filename_SheetName2
+    3. A report of files which could not be read (maybe due to corrupt data) will be generated for reference in the end.
+Depends: R (>= 3.4.3)
+Imports: 
+    readxl,
+    stringr
+Suggests: 
+    readxl,
+    stringr
+License: MIT
+         YEAR: 2018
+         COPYRIGHT HOLDER: Pranav Sachdev
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
