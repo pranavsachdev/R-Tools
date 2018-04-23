@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524511032213.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "721593471",
+    "id" : "D249E258",
+    "lastKnownWriteTime" : 1524511115,
+    "last_content_update" : 1524511115834,
+    "path" : "~/INTELLECTUAL CAPITAL (IC)/R Function to repetitively read files using folder structure/PACKAGE_Using_RSTUDIO/nstdFileRd/inst/AUTHORS",
+    "project_path" : "inst/AUTHORS",
+    "properties" : {
+        "cursorPosition" : "15,36",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

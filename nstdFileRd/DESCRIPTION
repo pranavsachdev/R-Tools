@@ -1,0 +1,22 @@
+Package: nstdFileRd
+Type: Package
+Title: Reads Data Files in Nested Folder Structure
+Version: 0.1.0
+Authors@R: person("Pranav", "Sachdev", email = "sachdevpranav1@gmail.com", role = c("aut", "cre"))
+Maintainer: Pranav Sachdev <sachdevpranav1@gmail.com>
+Description: 
+     Read data files residing within the nested folder structure.
+     Provide the path of the root directory and all the csv and excel data files in the nested folder structure gets loaded.
+     1. The naming convention of the read files will be: 
+        a. For CSV - ProjData_<FolderName1>_<FolderName2>_<FolderName3>._filename
+        b.For XLSX/XLS -	ProjData_<FolderName1>_<FolderName2>_<FolderName3>._filename_SheetName1
+   	2. A report of unread files (maybe due to corrupt data) will be generated in the end in a dataframe named 'err_list'.
+Depends: R (>= 2.15.0)
+Imports: 
+    readxl,
+    stringr,
+    utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

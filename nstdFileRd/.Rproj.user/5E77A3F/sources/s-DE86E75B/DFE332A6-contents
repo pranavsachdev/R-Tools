@@ -1,0 +1,43 @@
+# Script to create package
+# References:
+# https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
+# http://r-pkgs.had.co.nz/description.html
+
+
+# Step 0: Packages you will need
+#install.packages("devtools")
+#install.packages("roxygen2")
+library("devtools")
+#devtools::install_github("klutometis/roxygen")
+library(roxygen2)
+
+# Step 1: Create your package directory
+setwd("C:/Users/pranav-sachdev/Documents/INTELLECTUAL CAPITAL (IC)/R Function to repetitively read files using folder structure")
+#devtools::create("filereadrrec")
+setwd("./filereadrrec/")
+#document()
+
+setwd("C:/Users/pranav-sachdev/Documents/INTELLECTUAL CAPITAL (IC)/R Function to repetitively read files using folder structure")
+install("filereadrrec")
+library(filereadrrec)
+setwd("C:\\Users\\pranav-sachdev\\Documents\\CLIENT_PROJECTS\\__Campbells\\2018_old\\ELM\\OrigData\\ELM\\StateLMIData")
+#filereadrrec::fl_read(".")
+fl_read(".")
+
+
+source("C:/Users/pranav-sachdev/Documents/INTELLECTUAL CAPITAL (IC)/R Function to repetitively read files using folder structure/filereadrrec/R/File_Reader_Function.R")
+setwd("C:\\Users\\pranav-sachdev\\Documents\\CLIENT_PROJECTS\\__Campbells\\2018_old\\ELM\\OrigData\\ELM\\StateLMIData\\SC/")
+#filereadrrec::fl_read(".")
+fl_read(".")
+
+
+# Github:
+install_github('pranavsachdev/R-Tools/filereadrrec')
+library(filereadrrec)
+
+
+### Tests:
+# Test 1:
+setwd("C:\\Users\\pranav-sachdev\\Documents\\CLIENT_PROJECTS\\__Campbells\\2018\\Workforce Planning/OrigData/Workday Data Files/")
+fl_read(".")
+View(err_list)
